@@ -13,6 +13,17 @@ const Navbar = () => {
         >
             <div className="w-full flex justify-betweem items-center
             max-w-7x1 mx-auto">
+                <Link
+                    to="/"
+                    className="flex items-center gap-2"
+                    onClick={() => {
+                        setActive("");
+                        window.scrollTo(0, 0);
+                    }}
+
+                >
+                    <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
+                </Link>
 
             </div>
         </nav>
